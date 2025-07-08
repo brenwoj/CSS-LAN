@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#updating arch keys
+sudo pacman -Sy archlinux-keyring manjaro-keyring
+sudo pacman-key --refresh-keys
+
+#installing steam
+
+
+
+# for running CSS in steam, 
