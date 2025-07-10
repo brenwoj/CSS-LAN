@@ -6,6 +6,12 @@ sudo pacman-key --refresh-keys
 
 #installing steam
 
+#maybe it is best if the server just matches the pirated copy of the game. check the updates:
+##pirated game = protocol version 24
+#                 Build label 6630498
+#                 Client AppID 240 [CSS]
 
+server on cd Desktop/css_server
+                  Build label 954095
 
 # for running CSS in steam, 
