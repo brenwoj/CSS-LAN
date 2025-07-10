@@ -14,4 +14,34 @@ sudo pacman-key --refresh-keys
 server on cd Desktop/css_server
                   Build label 954095
 
+###Set up static IP on all machines
+
+Steps (Repeat on All Machines):
+Open a terminal
+Launch the tool:
+
+bash
+Copy
+Edit
+sudo nmtui
+Use arrow keys to choose:
+
+"Edit a connection"
+Select your active Ethernet connection (usually something like Wired connection 1 or enp0s31f6)
+Choose:
+
+IPv4 CONFIGURATION → Manual
+Fill in the fields:
+Address: 192.168.1.X (e.g., .2 for Client 1, .1 for Server)
+Netmask: 255.255.255.0
+Gateway: (leave blank)
+DNS: (leave blank or set to 8.8.8.8 if needed for local services)
+Confirm and save
+Back out and activate the connection (or reboot to be sure)
+
+
+#FIGURE OUT HOW TO DOWNLOAD https://github.com/ValveSoftware/source-sdk-2013
+
+#I THINK THE ANSWER IS A BACKLOGGED 'LEGACY' DEDICATED SERVER RUNNING THE SAME BUILD LABEL AS THE PIRATED COPY
+
 # for running CSS in steam, 
