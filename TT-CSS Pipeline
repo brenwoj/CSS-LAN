@@ -1,0 +1,20 @@
+#AS THE GENERAL INSTALLATION COMPLETELY CHANGED WE HAVE SHIFTED FROM ARCH LINUX TO WINDOWS 7 [so it works lol]
+
+#This change removes a lot of the headaches, but introduces some new ones, and in this file I will explain and document a repeatable package that can be installed on every computer.
+
+#SOME REALLY FUN ASPECTS
+
+##DRIVERS
+##because every computer is completely different, the drivers need to be manually installed. not a huge problem but what can make this more difficult is a lack of wifi drivers. the best tool for the driver solution is SDIO [https://www.glenn.delahoy.com/snappy-driver-installer-origin/]
+##its a crazy tool and works great.
+
+##CS:S
+##The unpacker we are using is the Counter-Strike Source package application. Produces best results, and is stored in the games directory. 
+##To change the name of the user it is in the settings tab in the game, very easy.
+
+##FIREFOX
+##no explaination, it's on the drive but you prolly dont need to use it
+
+##ACTION CAPTURE/MACROS
+##Super program called tinytask. Completely free, easy to use, ridiculously light, and perfect. [https://www.tinytask.net/index.html]
+
