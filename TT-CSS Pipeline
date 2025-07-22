@@ -12,6 +12,18 @@
 ##The unpacker we are using is the Counter-Strike Source package application. Produces best results, and is stored in the games directory. 
 ##To change the name of the user it is in the settings tab in the game, very easy.
 
+#GETTING RID OF THE "EXIT TO DESKTOP" BUTTON ON THE MAIN MENU
+##Games\Counter-Strike Source\cstrike\resource\gamemenu.res
+##scroll down to 
+
+"11"
+{
+  "label" "#GameUI_GameMenu_Quit"
+  "command" "Quit"
+}
+
+and quote it out with ////
+
 ##FIREFOX
 ##no explaination, it's on the drive but you prolly dont need to use it
 
