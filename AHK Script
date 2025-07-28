@@ -1,0 +1,11 @@
+AHK SCRIPT:
+
+Custom HotKeys:
+^+q::  =  control + shift + q
+       = closes hl2.exe, makes msg box, relaunches desktop, ends AHK script
+
+^!+r:: =  control + alt + shift + r
+       =  runs cmd.exe
+              NOTES:  
+                 regedit = registry editor
+                 gpedit.msc = local group policy editor
