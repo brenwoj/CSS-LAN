@@ -32,3 +32,26 @@ Once CS:S is installed in the games folder, go to Counter-Strike Source>cstrike 
 Then run the game and change the name of the user to match the current CPU
 After everything looks good, transfer the shortcut on the desktop to the startup folder so it starts on bootup. 
 
+
+****Start menu modifications:
+
+lock down task manager
+lock down taskbar
+lock down startmenu
+lock down ctl alt del screen [get rid of shutdown settings and limit choices]
+
+*****Background image in startup
+
+1. Open regedit
+2. Go to:
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Background
+3. Right click in Background and do New > Dword (32-bit) Value and name it OEMBackground and set the value to 1
+
+4. Go to:
+    C:\Windows\System32\oobe
+  [you will  need to make the info folder and inside make the backgrounds folder final path is C:\Windows\System32\oobe\info\backgrounds]
+
+5. Place the background image in the folder and name it 
+    backgroundDefault.jpt
+
+6. Test with win+l or restart.
