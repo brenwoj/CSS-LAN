@@ -1,0 +1,34 @@
+New Computer Setup
+
+[things that need to be changed]
+*[[Drivers - SDIO]]
+**[[AHK lockdown - easy script]]
+***[[CS:S install + modified files]]
+****[[Start menu modifications - look at CPU1]]
+*****[[Background image in startup]]
+
+*After setting Windows 7 pro up, the first thing that needs to happen is updating the driver. To do this we use SDIO [Snappy driver installer origin]
+
+Transfer SDIO to the desktop of the new machine, and then run the SDIO_R816.exe. 
+Select all of the drivers that need to be updated and then click install (x) on the left side of the screen. 
+It takes some time, but once done all is working great.
+
+Once complete restart system.
+
+**AHK
+
+Transfer AHK from the USB to the new machine.
+Run AutoHotkey_1.1.37.02_setup
+go to program files > AutoHotKey > Compiler > Ahk2exe
+select the script in the AHK folder transferred from the USB.
+Compile the script into a .exe and then move it into the startup folder
+
+***CS:S
+
+Transfer CounterStrikeSource folder in CPU_Setup to the desktop of the new machine.
+Open the folder, run the installation .exe
+
+Once CS:S is installed in the games folder, go to Counter-Strike Source>cstrike and replace the cfg and resource with the ones on the USB.
+Then run the game and change the name of the user to match the current CPU
+After everything looks good, transfer the shortcut on the desktop to the startup folder so it starts on bootup. 
+
