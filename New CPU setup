@@ -21,7 +21,8 @@ Transfer AHK from the USB to the new machine.
 Run AutoHotkey_1.1.37.02_setup
 go to program files > AutoHotKey > Compiler > Ahk2exe
 select the script in the AHK folder transferred from the USB.
-Compile the script into a .exe and then move it into the startup folder
+Compile the script into an .exe and then move it into the startup folder
+Compile the script into an .exe and then move it into the startup folder
 
 ***CS:S
 
@@ -40,6 +41,40 @@ lock down taskbar
 lock down startmenu
 lock down ctl alt del screen [get rid of shutdown settings and limit choices]
 
+In local Computer policy
+User Configuration > Administrative Templates > System > Ctrl+Alt+Del Options
+Change to > Enabled:
+    Remove Change Password
+    Remove Lock Computer
+    Remove Task Manager
+    Remove Logoff
+
+Computer Configuration > Administrative Templates > System > Logon
+Change to > Enabled:
+    Hide entry points for Fast User Switching
+
+User Configuration > Administrative Templates > Start Menu and Taskbar
+    Remove and prevent access to the Shut Down, Restart, Sleep...
+    Remove Run menu from Start Menu
+    Remove Default Programs link from the Start menu
+    Remove Music icon from Start Menu
+    Remove Network icon from Start Menu
+    Remove Pictures icon from Start Menu
+
+
+Removing the Ease of Access on the Ctl+Alt+Del screen:
+1. Go to HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options
+2. Right-click on Image File Execution Options > New > Key and name it utilman.exe
+3. Select utilman.exe and then right-click the right panel > net > string value 
+4. Name it Debugger and set the value to nul
+
+Disabling Right-Clicking on Desktop
+1. type gpedit.msc in cmd.exe
+2. go to User Configuration > Administrative Templates > Windows Components > Windows Explorer
+3. Find Remove Windows Explorer's default context menu"
+4. Set to Enabled
+5. click Apply.
+
 *****Background image in startup
 
 1. Open regedit
@@ -52,6 +87,6 @@ lock down ctl alt del screen [get rid of shutdown settings and limit choices]
   [you will  need to make the info folder and inside make the backgrounds folder final path is C:\Windows\System32\oobe\info\backgrounds]
 
 5. Place the background image in the folder and name it 
-    backgroundDefault.jpt
+    backgroundDefault.jpg
 
 6. Test with win+l or restart.
